@@ -21,14 +21,16 @@ plot(normalized_n(1:425), abs_final_fft(1:425));
 hold on;
 line([0.015,0.015], [0 30000],'linestyle','--','Color','g');
 line([0.036,0.036], [0 30000],'linestyle','--','Color','r');
-% axis([0 0.45 0 3*10^4]);
+
 % original dataset displayed in frequency domain
 figure(2);
 plot(normalized_n(1:425),abs_final_HR_fft(1:425));
 hold on;
 line([0.015,0.015], [0 160],'linestyle','--','Color','g');
 line([0.036,0.036], [0 160],'linestyle','--','Color','r');
+
 figure(3);
 plot(n,HR');
+
 figure(4);
 plot(n,final_filtered);
